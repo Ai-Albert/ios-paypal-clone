@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="ady-TL-u4X" customClass="ViewController" customModule="PayPalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0X-3p-GPE">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="912"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ReW-sx-Npd">
-                                <rect key="frame" x="0.0" y="88" width="390" height="878"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="878"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCJ-sO-sdG">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="878"/>
@@ -278,7 +278,7 @@
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiS-nR-zND">
-                                <rect key="frame" x="0.0" y="910" width="390" height="90"/>
+                                <rect key="frame" x="0.0" y="822" width="390" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9Vz-ba-Qd4">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
@@ -362,6 +362,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="ydx-7D-EPw"/>
                     <size key="freeformSize" width="390" height="1000"/>
+                    <connections>
+                        <outlet property="balanceView" destination="SGf-5m-10O" id="UjM-Ks-nwR"/>
+                        <outlet property="getMoreView" destination="XaM-qH-AUm" id="4c6-n7-p6H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGR-lC-IKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -372,7 +376,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jdL-pW-8Lc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="swQ-Pk-ZfL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="swQ-Pk-ZfL">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
